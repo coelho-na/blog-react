@@ -9,7 +9,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link className="navbar__link" to="/create">
-          New Blog
+          New Post
         </Link>
       </div>
     </nav>
