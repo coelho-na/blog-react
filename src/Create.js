@@ -46,16 +46,12 @@ const Create = () => {
         ></textarea>
 
         <label className="create-post__label">Post author:</label>
-        <select
+        <input
+          type="text"
           className="create-post__selection"
           value={author}
-          onChange={(e) => {
-            setAuthor(e.target.value);
-          }}
-        >
-          <option value="mario">Mario</option>
-          <option value="yoshi">Yoshi</option>
-        </select>
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         {!isLoading && (
           <button className="create-post__button">Add Post</button>
         )}
