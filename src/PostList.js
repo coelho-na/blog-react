@@ -8,7 +8,7 @@ const PostList = ({ posts, title }) => {
         <div className="posts__preview" key={post.id}>
           <Link className="posts__link" to={`/blogs/${post.id}`}>
             <h2 className="posts__title">{post.title}</h2>
-            <p>Written by {post.author}</p>
+            <p>Written by {post.author}.</p>
           </Link>
         </div>
       ))}
